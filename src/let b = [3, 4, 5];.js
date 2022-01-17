@@ -1,9 +1,13 @@
-const vqv = (name, idade) => {
-  console.log(`
-  Oi, meu nome é ${name}!
-  Tenho ${idade} anos,
-  trabalho na Trybe e mando muito em programação!
-  #VQV!`);
+const circle = (radius) => {
+  const PI = 3.14;
+
+  if (!radius || typeof radius !== 'number') { return undefined; }
+
+  return {
+    radius,
+    area: PI * radius * radius,
+    circumference: 2 * PI * radius,
+  };
 };
 
-vqv('TUnico', 30);
+console.log(Object.keys(circle(1)).length);
