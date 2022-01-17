@@ -1,4 +1,4 @@
-/*
+  /*
   A função numbers recebe um array (tamanho variável),
   retornando true se todos os parâmetros forem do tipo 'number' e false caso contrário.
 
