@@ -1,18 +1,9 @@
-let b = [3, 4, '5'];
-
-const average = (array) => {
-  let soma = 0; 
-  if (array.length < 1) {
-    return undefined;
-  }  
-  for (let i = 0; i < array.length; i += 1) {
-    if (typeof array[i] !== 'number') {
-      return undefined;
-    }
-    soma += array[i];
-  }
-  let media = soma / array.length;  
-  console.log(Math.round(media)); 
+const vqv = (name, idade) => {
+  console.log(`
+  Oi, meu nome é ${name}!
+  Tenho ${idade} anos,
+  trabalho na Trybe e mando muito em programação!
+  #VQV!`);
 };
 
-average(b);
+vqv('TUnico', 30);
