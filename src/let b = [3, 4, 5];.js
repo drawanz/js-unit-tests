@@ -10,4 +10,4 @@ const circle = (radius) => {
   };
 };
 
-console.log(Object.keys(circle(1)).length);
+console.log(Object.values(circle(3))[1]);
