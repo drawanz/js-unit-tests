@@ -18,13 +18,11 @@
 const goodPerson = 'Eita pessoa boa!';
 
 const createStudent = (nome) => {
-  let estudante = {
+  const estudante = {
     name: nome,
     feedback: () => goodPerson,
   };
-  return estudante.feedback();
+  return estudante;
 };
-
-console.log(createStudent('alisson'));
 
 module.exports = createStudent;
