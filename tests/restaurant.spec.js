@@ -124,5 +124,10 @@ describe('10 - Implemente os casos de teste e a função `createMenu`', () => {
     // objetoRetornado.pay() // Retorno: somaDosPreçosDosPedidos
     // ```
     // Agora faça o PASSO 4 no arquivo `src/restaurant.js`.
+    const teste3 = createMenu({ food: { coxinha: 3.9, sopa: 9.9 }, drink: { agua: 3.9, cerveja: 6.9 } });
+    teste3.order('coxinha');
+    teste3.order('agua');
+    teste3.order('coxinha');
+    expect(teste3.pay()).toBeCloseTo(11.7);
   });
 });

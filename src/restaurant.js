@@ -80,13 +80,21 @@
 // DICA: para isso, você precisará percorrer tanto o objeto da chave `food` quanto o objeto da chave `drink`.
 // { food: { coxinha: 3.9, sopa: 9.9 }, drink: { agua: 3.9, cerveja: 6.9 } }
 
-const createMenu = (objetoPassadoPorParametro) => {
+const createMenu = (objeto) => {
   let consumption = [];
+  let conta = [];
   return {
-    fetchMenu: () => objetoPassadoPorParametro,
+    fetchMenu: () => objeto,
     consumption,
     order: (string) => consumption.push(string),
-  };
+    pay: () => {
+      consumption.forEach((element) => {
+      if (objeto.food[element]) { conta.push(objeto.food[element]); }
+      if (objeto.drink[element]) { conta.push(objeto.drink[element]); }
+    });
+    return conta.reduce((valor1, valor2) => valor1 + valor2);
+  },
+};
 };
 
 module.exports = createMenu;
