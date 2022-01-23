@@ -40,6 +40,7 @@ describe('6 - Implemente os casos de teste para a função `productDetails`', ()
     // Teste se quando passado parâmetros diferentes entre si, os dois objetos também são diferentes entre si.
     expect(productDetails('Alcool gel', 'Máscara')[0] !== productDetails('Alcool gel', 'Máscara')[1]).toBe(true);
     // Teste se os dois productIds terminam com 123.
-    expect(productDetails('Alcool gel', 'Máscara')[0].details.productId && productDetails('Alcool gel', 'Máscara')[1].details.productId).toMatch(/123/);
+    expect(productDetails('Alcool gel', 'Máscara')[0].details.productId.endsWith('123') && productDetails('Alcool gel', 'Máscara')[1].details.productId.endsWith('123')).toBe(true);
   });
 });
+//toMatch(/123/);
