@@ -17,7 +17,7 @@
 
 const goodPerson = 'Eita pessoa boa!';
 
-const createStudent = (nome) => {
+const createStudent = (nome) => { // função implementada por mim
   const estudante = {
     name: nome,
     feedback: () => goodPerson,

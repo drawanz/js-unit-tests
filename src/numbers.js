@@ -9,13 +9,13 @@
     - numbers([2, 'errado', 5]); // Retorna: false
 */
 
-const numbers = (myArray) => {
-  for (let i = 0; i < myArray.length; i += 1) {
-    if (typeof myArray[i] !== 'number') {
-      return false;
-    }
-  }
-  return true;
-};
+const numbers = (myArray) => { // função fornecida pela escola Trybe, nesse exercício eu implementei os testes para a função, no arquivo numbers.spec.js
+  for (let i = 0; i < myArray.length; i += 1) { 
+    if (typeof myArray[i] !== 'number') { 
+      return false; 
+    } 
+  } 
+  return true; 
+}; 
 
 module.exports = numbers;

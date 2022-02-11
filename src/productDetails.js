@@ -24,7 +24,7 @@
   ]
 */
 
-const productDetails = (firstProduct, secondProduct) => [
+const productDetails = (firstProduct, secondProduct) => [ // função implementada pela Trybe, desenvolvi os testes para ela no arquivo productDetails.spec.js
   {
     name: firstProduct,
     details: {

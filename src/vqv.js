@@ -16,7 +16,7 @@
       #VQV!'
 */
 
-const vqv = (name, idade) => {
+const vqv = (name, idade) => { // função implementada por mim
   if (name === undefined && idade === undefined) {
     return undefined;
   } return `Oi, meu nome é ${name}!

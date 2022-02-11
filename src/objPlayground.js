@@ -33,7 +33,7 @@
   arrayGenerator('entries', { sum: 3, mult: 2, div: 1, sub: 0 }) // [ [ 'sum', 3 ], [ 'mult', 2 ], [ 'div', 1 ], [ 'sub', 0 ] ]
 */
 
-const calculator = (number1, number2) => {
+const calculator = (number1, number2) => { //função implementada por mim, a trybe desenvolveu os testes.
   let guardaValores = { sum: 0, mult: 0, div: 0, sub: 0 };
   guardaValores.sum = number1 + number2;
   guardaValores.mult = number1 * number2;
@@ -42,7 +42,7 @@ const calculator = (number1, number2) => {
   return guardaValores;
 };
 
-const arrayGenerator = (type, object) => {
+const arrayGenerator = (type, object) => { //função implementada por mim, a trybe desenvolveu os testes.
   if (type === 'keys') {
     return Object.keys(object);
   }

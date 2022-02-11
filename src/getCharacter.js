@@ -54,7 +54,8 @@ const characters = {
   },
 };
 
-const getCharacter = (name) => {
+const getCharacter = (name) => { 
+  // função implementada por mim, os testes foram implementados pela Trybe no arquivo getCharacter.spec.js
   if (name === undefined) {
     return undefined;
   }

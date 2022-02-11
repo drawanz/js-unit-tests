@@ -15,7 +15,7 @@ const myCounter = require('../src/myCounter');
   OBS: Lembre-se que você não precisa se preocupar com o describe e o it por enquanto, isso será aprendido posteriormente.
 */
 
-describe('8 - Implemente a função `myCounter`', () => {
+describe('8 - Implemente a função `myCounter`', () => { // teste implementado pela Trybe.
   it('Verifica se a função `myCounter` funciona como o esperado', () => {
     const expectedOutput = [0, 2, 3, 1, 2, 3, 2, 2, 3, 3, 2, 3];
     expect(myCounter()).toEqual(expectedOutput);

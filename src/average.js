@@ -12,7 +12,7 @@
     - average([1, '2']) // Retorno: undefined;
 */
 
-const average = (array) => {
+const average = (array) => { // linha de código fornecida pela escola Trybe
   let soma = 0; 
   if (array.length < 1) {
     return undefined;
@@ -27,4 +27,4 @@ const average = (array) => {
   return Math.round(media);
 };
 
-module.exports = average;
+module.exports = average; // linha de código fornecida pela escola Trybe

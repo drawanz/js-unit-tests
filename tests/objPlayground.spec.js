@@ -36,6 +36,7 @@ const { calculator, arrayGenerator } = require('../src/objPlayground');
 */
 
 describe('7 - Implemente as funções `calculator` e `arrayGenerator`', () => {
+  // testes implementados pela Trybe, eu realizei a implementação das funções no arquivo objPlayground.spec.js
   it('Verifica se a função `calculator` retorna os valores esperados', () => {
     expect(calculator(1, 3)).toEqual({ sum: 4, mult: 3, div: 0, sub: -2 });
     expect(calculator(10, 3)).toEqual({ sum: 13, mult: 30, div: 3, sub: 7 });

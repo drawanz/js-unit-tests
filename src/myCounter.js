@@ -16,7 +16,8 @@
   myCounter() // Retorna: [0, 2, 3, 1, 2, 3, 2, 2, 3, 3, 2, 3];
 */
 
-const myCounter = () => {
+const myCounter = () => { 
+  // função implementada por mim, a implementação dos testes foi de resonsabilidade da Trybe no arquivo myCounter.spec.js
   let myArray = [];
   for (let counter = 0; counter <= 3; counter += 1) {
     myArray.push(counter);
